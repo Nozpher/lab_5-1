@@ -5,6 +5,7 @@
 //прототип нашей функции:
 void my_swap(double*& a, double*& b);
 
+using namespace std;
 
 int main(void) {
 
@@ -24,8 +25,8 @@ int main(void) {
     // покажем до сортировки:
     for (int i = 0; i < num_of_row; i++) {
         for (int j = 0; j < num_of_col; j++)
-            std::cout << matrix[i][j] << "\t";
-        std::cout << std::endl;
+            cout << matrix[i][j] << "\t";
+        cout << endl;
     }
     std::cout << std::endl;
 
@@ -45,7 +46,7 @@ int main(void) {
     for (int i = 0; i < num_of_row; i++) {
         for (int j = 0; j < num_of_col; j++)
             std::cout << matrix[i][j] << "\t";
-        std::cout << std::endl;
+        cout << endl;
     }
 
     //Освобождаем память:
